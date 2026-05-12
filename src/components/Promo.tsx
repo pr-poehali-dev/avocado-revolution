@@ -47,8 +47,8 @@ export default function Promo() {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-white">
             <div className="text-4xl font-bold mb-2">2035</div>
             <div className="text-sm opacity-70 uppercase tracking-wide mb-3">Мечта</div>
-            <div className="text-lg font-medium">Топ‑50</div>
-            <div className="text-sm opacity-60 mt-1">Интернет в 90% сёл</div>
+            <div className="text-lg font-medium">50–55-е место</div>
+            <div className="text-sm opacity-60 mt-1">5–6 млн туристов, интернет в 90% сёл</div>
           </div>
         </div>
         <p className="text-white/50 text-xs mt-8 uppercase tracking-widest">

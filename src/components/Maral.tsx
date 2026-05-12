@@ -146,7 +146,7 @@ export default function Maral() {
             </div>
             <div className="flex items-center gap-3 p-4 bg-white rounded border-l-4 border-green-500">
               <span className="text-2xl">📱</span>
-              <span>2035: интернет в 90% сёл, налоги до 45%</span>
+              <span>2035: турпоток 5–6 млн, рейтинг 50–55-е, интернет в 90% сёл</span>
             </div>
             <div className="flex items-center gap-3 p-4 bg-white rounded border-l-4 border-green-600">
               <span className="text-2xl">🌍</span>
