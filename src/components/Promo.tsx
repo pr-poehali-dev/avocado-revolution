@@ -7,60 +7,63 @@ export default function Promo() {
     target: container,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10vh", "10vh"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-15vh", "15vh"]);
 
   return (
     <div
       ref={container}
-      className="relative flex items-center justify-center h-screen overflow-hidden"
-      style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+      className="relative flex items-center justify-center min-h-screen overflow-hidden bg-neutral-900"
     >
-      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
-        <motion.div style={{ y }} className="relative w-full h-full">
-          <img
-            src="https://cdn.poehali.dev/projects/b1588b51-16bc-461f-98b8-edce3fb4616a/files/86639c49-ca87-4677-ab7e-7d0215a6300c.jpg"
-            alt="Телецкое озеро, Алтай"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </motion.div>
-      </div>
+      <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
+        <img
+          src="https://cdn.poehali.dev/projects/b1588b51-16bc-461f-98b8-edce3fb4616a/files/4a53839f-e451-4195-a34e-e9540e643877.jpg"
+          alt="Весёлый марал — оптимистичный прогноз"
+          className="w-full h-full object-cover opacity-40"
+        />
+      </motion.div>
 
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base tracking-widest opacity-70">
-        Прогноз
-      </h3>
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-20">
+        <h3 className="text-xs uppercase tracking-widest text-green-400/70 mb-4 text-center">
+          Слайд 14 · Прогноз оптимистичный
+        </h3>
+        <h2 className="text-4xl md:text-6xl font-bold text-white text-center mb-14 leading-tight">
+          Маралы<br />с паспортами.
+        </h2>
 
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl w-full">
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-white">
-            <div className="text-4xl font-bold mb-2">2026</div>
-            <div className="text-sm opacity-70 uppercase tracking-wide mb-3">Сейчас</div>
-            <div className="text-lg font-medium">76-е место</div>
-            <div className="text-sm opacity-60 mt-1">Дотации 85%</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white">
+            <div className="text-5xl font-bold text-green-300 mb-3">2030</div>
+            <div className="text-sm uppercase tracking-wide text-green-400/70 mb-4">Ближайший прогноз</div>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li>🦌 Турпоток — 4 млн чел.</li>
+              <li>📊 Рейтинг — 65-е место</li>
+            </ul>
           </div>
-          <div className="bg-white/20 backdrop-blur-sm border border-white/30 p-6 text-white md:scale-105">
-            <div className="text-4xl font-bold mb-2">2030</div>
-            <div className="text-sm opacity-70 uppercase tracking-wide mb-3">Оптимистичный</div>
-            <div className="text-lg font-medium">65-е место</div>
-            <div className="text-sm opacity-60 mt-1">Турпоток 4 млн</div>
+
+          <div className="bg-green-500/20 backdrop-blur-sm border border-green-400/40 p-8 text-white md:scale-105">
+            <div className="text-5xl font-bold text-green-300 mb-3">2035</div>
+            <div className="text-sm uppercase tracking-wide text-green-400/70 mb-4">Оптимистичный</div>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li>🧳 Турпоток — 5–6 млн</li>
+              <li>📊 Рейтинг — 50–55-е</li>
+              <li>📶 Интернет в 90% сёл</li>
+            </ul>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-white">
-            <div className="text-4xl font-bold mb-2">2035</div>
-            <div className="text-sm opacity-70 uppercase tracking-wide mb-3">Мечта</div>
-            <div className="text-lg font-medium">50–55-е место</div>
-            <div className="text-sm opacity-60 mt-1">5–6 млн туристов, интернет в 90% сёл</div>
+
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 text-white">
+            <div className="text-5xl font-bold text-green-300 mb-3">2040</div>
+            <div className="text-sm uppercase tracking-wide text-green-400/70 mb-4">Мечта</div>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li>🌍 Рейтинг — топ‑40</li>
+              <li>🦌 Маралы с паспортами</li>
+            </ul>
           </div>
         </div>
-        <p className="text-white/50 text-xs mt-8 uppercase tracking-widest">
-          2040: маралы с паспортами 🦌
+
+        <p className="text-center text-white/30 text-xs uppercase tracking-widest">
+          Если сделать хотя бы 3 из 5 шагов рецепта
         </p>
       </div>
-
-      <p className="absolute bottom-12 left-6 text-white text-xl sm:text-2xl md:text-3xl max-w-sm z-10 font-light leading-relaxed">
-        Экология №1 в России.<br />
-        Туристов больше,<br />
-        чем населения.
-      </p>
     </div>
   );
 }
