@@ -16,8 +16,8 @@ export default function Promo() {
     >
       <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
         <img
-          src="https://cdn.poehali.dev/projects/b1588b51-16bc-461f-98b8-edce3fb4616a/files/4a53839f-e451-4195-a34e-e9540e643877.jpg"
-          alt="Весёлый марал — оптимистичный прогноз"
+          src="https://cdn.poehali.dev/projects/b1588b51-16bc-461f-98b8-edce3fb4616a/files/0b740570-26ad-490c-a86c-b4029e98b1fe.jpg"
+          alt="Рассвет над горами Алтая — оптимистичный прогноз"
           className="w-full h-full object-cover opacity-40"
         />
       </motion.div>
